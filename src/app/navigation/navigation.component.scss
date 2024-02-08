@@ -1,6 +1,6 @@
 img {
     display: block;
-
+    width: 300px;
     margin: auto;
 }
 
@@ -21,6 +21,8 @@ img {
 }
 
 nav {
+    background-color: #f57915;
+    width: 100%;
 
     ul {
         display: flex;
@@ -39,8 +41,8 @@ nav {
 
 #mobile-navigation.show {
     display: block;
-    width: 98%;
-    box-shadow: 2px 2px 5px rgba(142, 142, 142, 0.811);
+    width: 100%;
+  
 
 }
 
@@ -48,6 +50,7 @@ nav {
     display: none;
 }
 
+// För större skärmar
 @media (min-width: 600px) {
 
     #menu-container {
@@ -67,10 +70,10 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: end;
-        margin: 0 20px;
+        margin: 0;
 
         ul {
-           flex-direction: row;
+            flex-direction: row;
 
 
             padding: 0;
@@ -87,10 +90,11 @@ nav {
         display: flex;
         box-shadow: none;
     }
+
     #mobile-navigation.show {
         display: flex;
-       
+
         box-shadow: none;
-    
+
     }
 }
