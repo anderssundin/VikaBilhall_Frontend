@@ -17,11 +17,10 @@
     
 
 }
-
 #car-ads-wrapper{
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 
     img {
@@ -37,3 +36,13 @@
         box-shadow: 2px 2px 5px grey;
     }
 }
+@media (min-width: 600px) {
+    #car-ads-wrapper{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }    
+
+}
+
