@@ -6,7 +6,7 @@
 </div>
 <nav id="mobile-navigation" [ngClass]="{'show': isMobileNavigationVisible}">
     <ul>
-        <li><a routerLink="/">Startsida</a></li>
-        <li><a routerLink="/about">Om oss</a></li>
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Startsida</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">Om oss</a></li>
     </ul>
 </nav>
