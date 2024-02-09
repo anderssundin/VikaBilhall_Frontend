@@ -8,7 +8,7 @@ export class GetAllCarsService {
 
   constructor() { }
 
-  getAllCars() : Observable<any> {
+  getAllCars() : Observable<Array<string|number>> {
     return from(
       fetch("https://dt191g-projekt.azurewebsites.net/api/carapi/")
       .then(response => response.json())

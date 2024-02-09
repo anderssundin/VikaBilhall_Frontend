@@ -13,8 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
 
-  allCars :any;
-
+  allCars :any[] =[];
   constructor(private getAllCarsService : GetAllCarsService) {}
 
   ngOnInit(){
@@ -22,5 +21,23 @@ export class HomeComponent {
       this.allCars = cars;
       console.log(cars);
     })
+  }
+
+  // Sök bil efter modellnamn
+  searchCar(search: string) {
+    if (!search) {
+      // Om söksträngen är tom, visa alla bilar igen
+      this.getAllCarsService.getAllCars().subscribe(cars => {
+        this.allCars = cars;
+      });
+    } else {
+      // Filtrera allCars baserat på söksträngen och skapa en ny array
+      const searchResult = this.allCars.filter(car =>
+        car.model.toLowerCase().includes(search.toLowerCase())
+      );
+
+      // Uppdatera allCars med sökresultatet
+      this.allCars = searchResult;
+    }
   }
 }

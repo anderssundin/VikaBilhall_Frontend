@@ -1,13 +1,7 @@
 <section id="search-section">
     <form>
         <label for="search">Sök: </label>
-        <input type="text" name="search" id="textSearch" placeholder="ex V60">
-
-        <select name="make" id="make">
-            <option value="0">Alla</option>
-            <option value="1">Volvo</option>
-            <option value="2">Fiat</option>
-        </select>
+        <input type="text" name="search" id="textSearch" placeholder="ex V60" #search (keyup)="searchCar(search.value)">
     </form>
 </section>
 
