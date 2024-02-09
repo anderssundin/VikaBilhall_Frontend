@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router'; 
+import { RouterLink } from '@angular/router'; 
 import { GetAllCarsService } from '../services/get-all-cars.service';
 import { CommonModule } from '@angular/common';
 
@@ -19,7 +19,6 @@ export class HomeComponent {
   ngOnInit(){
     this.getAllCarsService.getAllCars().subscribe(cars =>{
       this.allCars = cars;
-      console.log(cars);
     })
   }
 
