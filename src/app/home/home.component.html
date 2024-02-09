@@ -17,7 +17,7 @@
         <h3>{{car.makeModel.makeOfModel}} {{car.model}}</h3>
         <p>Pris: {{ car.price | currency: 'SEK ' : 'symbol':'0.0-2' }}</p>
         <p>Årsmodell: {{ car.year}}</p>
-        <p>Miltal: {{car.milage | number}}</p>¨
+        <p>Miltal: {{car.milage | number}}</p>
         <p>Drivmedel: {{car.fuel}}</p>
         <a routerLink="/details/{{car.id}}">Läs mer</a>
     </article>
