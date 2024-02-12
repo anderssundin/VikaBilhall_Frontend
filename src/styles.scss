@@ -5,3 +5,20 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.read-more-btn {
+    background-color: #f57915;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block; 
+    width: fit-content; 
+    margin: auto; 
+    transition: all .3s;
+    color: white;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: #c5610f;
+    }
+}

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
+
 
     label {
         align-self: flex-end;
@@ -14,29 +14,37 @@
     select {
         height: 1.7rem;
     }
-    
+
 
 }
 
 
-#car-ads-wrapper{
+#car-ads-wrapper {
 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
 
-    img {
-        display: block;
-        width: 80%;
-        padding-top: 10px;
-        margin: auto;
-    }
-    article{
+  
+    article {
         text-align: center;
         margin: 20px;
+        padding-bottom: 20px;
         border-radius: 4px;
         box-shadow: 2px 2px 5px grey;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 80%;
+            padding-top: 10px;
+            margin: auto;
+        }
+    
+        
     }
+
+
 }
 
 
@@ -51,15 +59,14 @@
     color: white;
     justify-content: center;
     align-items: center;
- }
+}
 
 @media (min-width: 600px) {
-    #car-ads-wrapper{
+    #car-ads-wrapper {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-    }    
+    }
 
 }
-
