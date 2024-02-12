@@ -1,6 +1,6 @@
 
-<article>
-    <img src="{{car.imageUrl}}" alt="">
+<article *ngIf="car">
+    <img src="{{car.imageUrl}}" alt="Säljobjekt">
     <h2>{{car.makeModel.makeOfModel}} {{car.model}}</h2>
     <p>Årsmodell: {{car.year}} - {{car.milage}} Mil</p>
     <p>Drivmedel: {{car.fuel}}</p>
