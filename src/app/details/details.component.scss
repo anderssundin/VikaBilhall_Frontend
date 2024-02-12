@@ -8,6 +8,21 @@ article {
     margin: 0 auto;
 
     img{
-        width: 600px;
+        width: 100%;
+    }
+
+    #desc{
+        background-color: rgb(217, 217, 217);
+        border-radius: 3px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 10px;
+        width: 90%;
+    }
+}
+
+@media (min-width:600px) {
+    #desc{
+        max-width: 60%;
     }
 }
