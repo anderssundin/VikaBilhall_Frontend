@@ -1,6 +1,6 @@
 <section id="search-section">
     <form>
-        <label for="search">Sök: </label>
+        <label for="textSearch">Sök: </label>
         <input type="text" name="search" id="textSearch" placeholder="ex V60" #search (keyup)="searchCar(search.value)">
     </form>
 </section>
@@ -14,7 +14,7 @@
     @for (car of allCars; track car.id){
     <article>
         <img src="{{car.imageUrl}}" alt="Bild på en lagerbil av typen {{car.makeModel.makeOfModel}} {{car.model}}">
-        <h3>{{car.makeModel.makeOfModel}} {{car.model}}</h3>
+        <h2>{{car.makeModel.makeOfModel}} {{car.model}}</h2>
         <p>Pris: {{ car.price | currency: 'SEK ' : 'symbol':'0.0-2' }}</p>
         <p>Årsmodell: {{ car.year}}</p>
         <p>Miltal: {{car.milage | number}}</p>
