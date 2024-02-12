@@ -13,13 +13,13 @@
 <section id="car-ads-wrapper">
     @for (car of allCars; track car.id){
     <article>
-        <img src="{{car.imageUrl}}" alt="">
+        <img src="{{car.imageUrl}}" alt="Bild på en lagerbil av typen {{car.makeModel.makeOfModel}} {{car.model}}">
         <h3>{{car.makeModel.makeOfModel}} {{car.model}}</h3>
         <p>Pris: {{ car.price | currency: 'SEK ' : 'symbol':'0.0-2' }}</p>
         <p>Årsmodell: {{ car.year}}</p>
         <p>Miltal: {{car.milage | number}}</p>
         <p>Drivmedel: {{car.fuel}}</p>
-        <a routerLink="/details/{{car.id}}">Läs mer</a>
+        <a routerLink="/details/{{car.id}}" id="read-more-btn">Läs mer</a>
     </article>
 }
     
